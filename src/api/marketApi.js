@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // API keys and configuration
-const ALPHA_VANTAGE_API_KEY = '6UFIJDVDB3XR6DCQ'; // Alpha Vantage API key
+const ALPHA_VANTAGE_API_KEY = import.meta.env.VITE_ALPHA_VANTAGE_API_KEY || ''; // Use environment variable
 const COINGECKO_API_URL = 'https://api.coingecko.com/api/v3';
 const ALPHA_VANTAGE_API_URL = 'https://www.alphavantage.co/query';
 

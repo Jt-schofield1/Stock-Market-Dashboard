@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Use a well-supported model - Claude is generally more reliable than Phi-4
-const OPENROUTER_API_KEY = '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';
+const OPENROUTER_API_KEY = import.meta.env.VITE_OPENROUTER_API_KEY || ''; // Use environment variable
 const MODEL_NAME = 'anthropic/claude-3-haiku:20240307';
 
 /**
